@@ -1,10 +1,34 @@
 *
   box-sizing: border-box
+
+@font-face
+  font-family: 'Intro Book'
+  src: local('Intro Book'), local('../fonts/Intro Book'), url('../fonts/Intro-Book.woff2') format('woff2'), url('../fonts/Intro-Book.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Intro Regular'
+  src: local('Intro Regular'), local('../fonts/Intro Regular'), url('Intro-Regular.woff2') format('woff2'), url('Intro-Regular.woff') format('woff')
+  font-weight: normal
+  font-style: normal
+  font-display: swap
+
+@font-face
+  font-family: 'Intro Bold'
+  src: local('Intro Bold'), local('../fonts/Intro Bold'), url('Intro-Bold.woff2') format('woff2'), url('Intro-Bold.woff') format('woff')
+  font-weight: bold
+  font-style: normal
+  font-display: swap
+
 .container
   width: 1128px
   margin: 0 auto
+
 body
-  
+  font-family: 'Intro Book', sans-serif
+
 img
   max-width: 100%
   object-fit: cover
