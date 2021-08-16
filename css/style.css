@@ -385,15 +385,41 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 
-button {
+ul {
+  padding: 0;
+}
+
+button, input {
   border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+::-webkit-input-placeholder {
+  color: #BDBDBD;
+  font-size: 14px;
+}
+
+:-moz-placeholder {
+  color: #BDBDBD;
+  font-size: 14px;
+}
+
+::-moz-placeholder {
+  color: #BDBDBD;
+  font-size: 14px;
+}
+
+:-ms-input-placeholder {
+  color: #BDBDBD;
+  font-size: 14px;
 }
 
 .navbar {
   height: 32px;
   background-color: #3B3B3B;
 }
-.navbar__wrapper {
+.navbar__top {
   display: flex;
   align-items: center;
   height: 32px;
@@ -404,6 +430,7 @@ button {
   display: flex;
   justify-content: space-between;
   width: 456px;
+  padding: 0;
 }
 .navbar__menu-link {
   font-family: "Intro Book", sans-serif;
@@ -420,4 +447,107 @@ button {
   font-size: 12px;
   line-height: 150%;
   color: #ffffff;
+}
+.navbar__center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.navbar__search {
+  position: relative;
+}
+.navbar__search-input {
+  width: 454px;
+  background-color: #F3F3F3;
+  padding: 14px 50px 8px 25px;
+  border-radius: 4px;
+}
+.navbar__search-button {
+  position: absolute;
+  left: 410px;
+  top: 10px;
+}
+.navbar__group-one {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 640px;
+}
+.navbar__group-two {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 207px;
+}
+.navbar__group-three {
+  border: 1px solid #B6BEC6;
+  border-radius: 4px;
+  padding: 10px 25px 10px 15px;
+}
+.navbar__group-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.navbar__group-icon {
+  width: 17px;
+  height: 15.5px;
+  padding-top: 1px;
+  margin-bottom: 6px;
+}
+.navbar__group-text {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #676F77;
+}
+.navbar__basket {
+  display: flex;
+  align-items: center;
+}
+.navbar__basket-icon {
+  margin-right: 18px;
+}
+.navbar__basket-price {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+}
+.navbar__bottom-menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.navbar__bottom-item {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+.navbar__bottom-link {
+  text-transform: uppercase;
+  font-family: "Intro Regular", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 160%;
+  color: #000000;
+}
+.navbar__bottom-link:nth-child(2) {
+  color: #E56E00;
+}
+.navbar__bottom-image {
+  margin-right: 10px;
+}
+.navbar__line {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #B6BEC6;
 }

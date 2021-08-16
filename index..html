@@ -1,49 +1,106 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Интернет магазин - Mobilus</title>
-   <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-  <!--! navbar -->
-  <section class="navbar">
-    <div class="container">
-      <div class="navbar__wrapper">
-        <ul class="navbar__menu">
-          <li class="navbar__menu-item">
-            <a href="#" class="navbar__menu-link">Магазины</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="#" class="navbar__menu-link">Доставка</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="#" class="navbar__menu-link">Контакты</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="#" class="navbar__menu-link">Сервис</a>
-          </li>
-          <li class="navbar__menu-item">
-            <a href="#" class="navbar__menu-link">Оптовикам</a>
-          </li>
-        </ul>
-        <!-- /. navbar__menu -->
-        <span class="navbar__phone">+7 (921) 912-34-56</span>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Интернет магазин - Mobilus</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!--! navbar -->
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar__top">
+          <ul class="navbar__menu">
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Магазины</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Доставка</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Контакты</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Сервис</a>
+            </li>
+            <li class="navbar__menu-item">
+              <a href="#" class="navbar__menu-link">Оптовикам</a>
+            </li>
+          </ul>
+          <!-- /. navbar__menu -->
+          <span class="navbar__phone">+7 (921) 912-34-56</span>
+        </div>
+        <!-- /. navbar__top -->
+        <div class="navbar__center">
+          <div class="navbar__group-one">
+            <a href="index.html" class="navbar__logo">
+              <img src="img/header/logo.png" alt="Логотип" class="navbar__logo-image" />
+            </a>
+            <form action="#" class="navbar__search">
+              <input type="text" class="navbar__search-input" placeholder="Поиск по каталогу" />
+              <button class="navbar__search-button">
+                <img src="img/header/search.svg" alt="Поиск" class="navbar__search-image" />
+              </button>
+            </form>
+          </div>
+
+          <div class="navbar__group-two">
+            <div class="navbar__group-item">
+              <img src="img/header/rating.svg" alt="Рейтинг" class="navbar__group-icon" />
+              <span class="navbar__group-text">Сравнение</span>
+            </div>
+            <div class="navbar__group-item">
+              <img src="img/header/heart.svg" alt="Избранное" class="navbar__group-icon" />
+              <span class="navbar__group-text">Избранное</span>
+            </div>
+            <div class="navbar__group-item">
+              <img src="img/header/user.svg" alt="Войти" class="navbar__group-icon" />
+              <span class="navbar__group-text">Войти</span>
+            </div>
+          </div>
+
+          <div class="navbar__group-three">
+            <a href="#" class="navbar__basket">
+              <img src="img/header/cart.svg" alt="Корзина" class="navbar__basket-icon">
+              <span class="navbar__basket-price">6 500 ₽</span>
+            </a>
+          </div>
+        </div>
+        <div class="navbar__line"></div>
+        <!-- /.navbar__center -->
+        <div class="navbar__bottom">
+          <ul class="navbar__bottom-menu">
+            <li class="navbar__bottom-item">
+              <a href="#" class="navbar__bottom-link">Чехлы</a>
+            </li>
+            <li class="navbar__bottom-item">
+              <a href="#" class="navbar__bottom-link">Стекла</a>
+            </li>
+            <li class="navbar__bottom-item">
+              <a href="#" class="navbar__bottom-link">Аксессуары</a>
+            </li>
+            <li class="navbar__bottom-item">
+              <a href="#" class="navbar__bottom-link">Новинки</a>
+            </li>
+            <li class="navbar__bottom-item">
+              <a href="#" class="navbar__bottom-link">Распродажа</a>
+            </li>
+            <li class="navbar__bottom-item">
+              <img src="img/header/pen.svg" alt="Ручка" class="navbar__bottom-image">
+              <a href="#" class="navbar__bottom-link">Создай свой чехол</a>
+            </li>
+          </ul>
+          <!-- /. navbar__bottom-menu -->
+        </div>
+        <!-- /.navbar__bottom -->
       </div>
-    </div>
-    <!-- /.container -->
-  </section>
+      <!-- /.container -->
+    </header>
 
-
-
-
-
-
-
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
