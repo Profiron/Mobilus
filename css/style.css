@@ -341,9 +341,34 @@ template {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Intro Book";
+  src: local("Intro Book"), local("../fonts/Intro Book"), url("../fonts/Intro-Book.woff2") format("woff2"), url("../fonts/Intro-Book.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Intro Regular";
+  src: local("Intro Regular"), local("../fonts/Intro Regular"), url("Intro-Regular.woff2") format("woff2"), url("Intro-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Intro Bold";
+  src: local("Intro Bold"), local("../fonts/Intro Bold"), url("Intro-Bold.woff2") format("woff2"), url("Intro-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 .container {
   width: 1128px;
   margin: 0 auto;
+}
+
+body {
+  font-family: "Intro Book", sans-serif;
 }
 
 img {
@@ -362,4 +387,37 @@ h1, h2, h3, h4, h5, h6 {
 
 button {
   border: none;
+}
+
+.navbar {
+  height: 32px;
+  background-color: #3B3B3B;
+}
+.navbar__wrapper {
+  display: flex;
+  align-items: center;
+  height: 32px;
+  justify-content: space-between;
+}
+.navbar__menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  width: 456px;
+}
+.navbar__menu-link {
+  font-family: "Intro Book", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 150%;
+  color: #ffffff;
+}
+.navbar__phone {
+  font-family: "Intro Bold", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 150%;
+  color: #ffffff;
 }
