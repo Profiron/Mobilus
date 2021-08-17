@@ -26,12 +26,16 @@
     font-size: 12px
     line-height: 150%
     color: $white
-  &__center
+.hcenter
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-top: 12px
+  padding-bottom: 12px
+  &__wrapper
     display: flex
-    align-items: center
     justify-content: space-between
-    padding-top: 12px
-    padding-bottom: 12px
+    align-items: center
   &__search
     position: relative
     &-input
@@ -85,11 +89,11 @@
       font-weight: normal
       font-size: 13px
       line-height: 150%
-  &__bottom
-    &-menu
-      display: flex
-      justify-content: space-around
-      align-items: center
+.hbottom
+  &__menu
+    display: flex
+    justify-content: space-around
+    align-items: center
     &-item
       display: flex
       align-items: center
@@ -98,7 +102,7 @@
       text-transform: uppercase
       font-family: 'Intro Regular', sans-serif
       font-style: normal
-      font-weight: normal
+      font-weight: bold
       font-size: 14px
       line-height: 160%
       color: $black
@@ -106,10 +110,9 @@
         color: $orange
     &-image
       margin-right: 10px
-  &__line
-    position: absolute
-    left: 0
-    width: 100%
-    height: 1px
-    background-color: $grey
-
+.line
+  position: absolute
+  left: 0
+  width: 100%
+  height: 1px
+  background-color: $grey
